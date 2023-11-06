@@ -1,0 +1,13 @@
+file_format: "1"
+id: alpha28
+name: alpha28
+type: board
+arch: arm
+features:
+  - keys
+  - underglow
+  - encoder
+outputs:
+  - usb
+  - ble
+url: none
