@@ -1,6 +1,6 @@
 {
-  "id": "toan40",
-  "name": "toan40",
+  "id": "toan",
+  "name": "toan",
   "layouts": {
     "LAYOUT": {
       "layout": [
@@ -53,4 +53,5 @@
       ]
     }
   },
+    "sensors": []
 }
