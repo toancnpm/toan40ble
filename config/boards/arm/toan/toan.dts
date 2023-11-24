@@ -89,7 +89,6 @@
         label = "CDC_ACM_0";
     };
 };
-
 &flash0 {
 	/*
 	 * For more information, see:
@@ -128,6 +127,5 @@
 			reg = <0x00074000 0x0000c000>;
 		};
 	};
-};
 };
 
