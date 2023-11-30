@@ -6,8 +6,21 @@ CONFIG_BOARD_TOAN=y
 CONFIG_ARM_MPU=y
 CONFIG_PINCTRL=y
 
+# Enable both USB and BLE
+CONFIG_ZMK_USB=y
+CONFIG_ZMK_BLE=y
+
 # enable GPIO
 CONFIG_GPIO=y
+
+# Enable 32kHz crystal
+CONFIG_CLOCK_CONTROL_NRF_K32SRC_XTAL=y
+
+# The full two-byte consumer report space has compatibility issues with some
+# operating systems, most notably macOS. Use the more basic single-byte usage
+# space.
+CONFIG_ZMK_HID_CONSUMER_REPORT_USAGES_BASIC=y
+
 
 CONFIG_BUILD_OUTPUT_UF2=y
 
@@ -20,14 +33,9 @@ CONFIG_FLASH=y
 CONFIG_FLASH_PAGE_LAYOUT=y
 CONFIG_FLASH_MAP=y
 
-# Enable 32kHz crystal
-CONFIG_CLOCK_CONTROL_NRF_K32SRC_XTAL=y
-CONFIG_CLOCK_CONTROL_NRF_K32SRC_150PPM=y
-
 #Misc configuration
 CONFIG_BT_CTLR_TX_PWR_PLUS_8=y
 CONFIG_ZMK_HID_REPORT_TYPE_NKRO=y
-CONFIG_ZMK_HID_CONSUMER_REPORT_USAGES_BASIC=y
 CONFIG_ZMK_BLE=y
 
 
