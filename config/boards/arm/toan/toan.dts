@@ -127,6 +127,8 @@
 			label = "adafruit_boot";
 			reg = <0x00074000 0x0000c000>;
 		};
+	};
+};
 &spi3 {
     compatible = "nordic,nrf-spim";
     status = "okay";
