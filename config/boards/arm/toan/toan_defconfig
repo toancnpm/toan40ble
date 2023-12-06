@@ -13,9 +13,6 @@ CONFIG_ZMK_BLE=y
 # enable GPIO
 CONFIG_GPIO=y
 
-# Enable 32kHz crystal
-CONFIG_CLOCK_CONTROL_NRF_K32SRC_XTAL=y
-
 # The full two-byte consumer report space has compatibility issues with some
 # operating systems, most notably macOS. Use the more basic single-byte usage
 # space.
@@ -35,6 +32,8 @@ CONFIG_BUILD_OUTPUT_UF2=y
 CONFIG_USB_HID_POLL_INTERVAL_MS=1
 
 # Debounce
-CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=10
-CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=10
+CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=4
+CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=4
 CONFIG_ZMK_KSCAN_EVENT_QUEUE_SIZE=8
+
+ONFIG_BT_CTLR_TX_PWR_PLUS_8=y
